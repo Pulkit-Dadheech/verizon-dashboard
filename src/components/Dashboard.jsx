@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className='bg-gradient-to-r from-blue-950 to-blue-900 min-h-screen'>
             <Navbar />
             {/* Station Monitoring Dashboard */}
-            <div className='flex justify-between m-5'>
+            <div className='flex justify-between items-center mt-5 mx-5 mb-2'>
                 <div className='text-2xl font-bold text-white'>Station Monitoring Dashboard</div>
                 <div className='flex items-center bg-blue-950 rounded-lg shadow-lg'>
                     <HvButton
@@ -28,8 +28,6 @@ const Dashboard = () => {
 
             {/* Dashboard Cards */}
             <DashboardCards />
-            
-            
         </div>
     );
 };

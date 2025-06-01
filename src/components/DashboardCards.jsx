@@ -1,7 +1,16 @@
 import React from 'react'
 import { HvSection } from "@hitachivantara/uikit-react-core";
 import { HvDashboard } from "@hitachivantara/uikit-react-lab";
-import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp } from 'react-icons/fa';
+import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp, FaCheckCircle, FaExclamationCircle, FaCamera } from 'react-icons/fa';
+
+// Example data for stations
+const stations = [
+  { name: "Station A", value: 8, total: 12 },
+  { name: "Station B", value: 5, total: 12 },
+  { name: "Station C", value: 12, total: 12 },
+  { name: "Station D", value: 3, total: 12 },
+  {name: "Station E",value: 7, total: 12 },
+];
 
 // Define your card data, including title and content as components
 const cardData = [
@@ -114,6 +123,61 @@ const cardData = [
       </>
     ),
     style: { backgroundColor: "#172554", padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+  },
+  {
+    key: "5",
+    title: (
+      <div className="flex items-center gap-2 mb-2">
+        <FaThermometerHalf className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Location-wise Fault Distribution</span>
+      </div>
+    ),
+    content: (
+      <div className='flex flex-col gap-4'>
+        {stations.map((station) => (
+          <div className='flex justify-between items-center' key={station.name}>
+            <span className='text-sm text-gray-300'>{station.name}</span>
+            <span className="w-[90%] mx-2 rounded bg-gray-700 overflow-hidden">
+              <div
+                className="h-1.5 rounded bg-red-400"
+                style={{ width: `${Math.round((station.value / station.total) * 100)}%` }}
+              />
+            </span>
+            <span className='text-lg font-semibold text-blue-400'>{station.value}</span>
+          </div>
+        ))}
+      </div>
+    ),
+    style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+  },
+  {
+    key: "6",
+    title: (
+      <div className="flex items-center gap-2 mb-2">
+        <FaCamera className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Gauge Reading Accuracy Check</span>
+      </div>
+    ),
+    content: (
+      <>
+        <div className="flex gap-6 my-4">
+          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
+            <FaCheckCircle className="text-green-400 text-2xl mb-2" />
+            <div className="text-green-400 text-3xl font-bold">98.51%</div>
+            <div className="text-sm text-gray-400">Accuracy Rate</div>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
+            <FaExclamationCircle className="text-yellow-400 text-2xl mb-2" />
+            <div className="text-yellow-400 text-3xl font-bold">23</div>
+            <div className="text-sm text-gray-400">Anomalies</div>
+          </div>
+        </div>
+        <div className="text-sm text-gray-400">
+          Total readings processed: <span className="text-white font-semibold">1,547</span>
+        </div>
+      </>
+    ),
+    style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
   }
 ];
 
@@ -122,6 +186,8 @@ const layout = [
   { i: "2", x: 6, y: 0, w: 6, h: 1.4, isResizable: false },
   { i: "3", x: 0, y: 1, w: 6, h: 1.4, isResizable: false },
   { i: "4", x: 6, y: 1, w: 6, h: 1.4, isResizable: false },
+  { i: "5", x: 0, y: 2, w: 12, h: 1.7, isResizable: false },
+  { i: "6", x: 0, y: 3, w: 12, h: 1.6, isResizable: false }
 ];
 
 const DashboardCards = () => {
