@@ -1,7 +1,7 @@
 import React from 'react'
 import { HvSection } from "@hitachivantara/uikit-react-core";
 import { HvDashboard } from "@hitachivantara/uikit-react-lab";
-import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp, FaCheckCircle, FaExclamationCircle, FaCamera } from 'react-icons/fa';
+import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp, FaCheckCircle, FaExclamationCircle, FaCamera, FaWifi, FaChartLine } from 'react-icons/fa';
 
 // Example data for stations
 const stations = [
@@ -184,24 +184,52 @@ const cardData = [
   {
     key: "7",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaCamera className="text-gray-300 text-base" />
-        <span className='text-sm font-semibold text-gray-200'>Camera Feed Status</span>
+      <div className="flex items-center gap-2 mb-5">
+        <FaClock className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Last Update Age</span>
       </div>
     ),
     content: (
-      <div className='flex flex-col gap-4'>
-        <div className='flex justify-between items-center'>
-          <span className='text-sm text-gray-300'>Camera 1</span>
-          <span className='text-green-400 font-semibold'>Online</span>
+      <div className="flex flex-col gap-2">
+        {/* Row 1 */}
+        <div className="flex items-center justify-between bg-gray-700 rounded p-3">  
+          <div className="flex items-center gap-2">
+            <FaWifi className="text-green-400" />
+            <span className="text-sm text-gray-200">TH-001</span>
+          </div>
+          <span className="text-xs text-green-400 font-semibold">2 min ago</span>
         </div>
-        <div className='flex justify-between items-center'>
-          <span className='text-sm text-gray-300'>Camera 2</span>
-          <span className='text-red-400 font-semibold'>Offline</span>
+        {/* Row 2 */}
+        <div className="flex items-center justify-between bg-gray-700 rounded p-3">
+          <div className="flex items-center gap-2">
+            <FaWifi className="text-green-400" />
+            <span className="text-sm text-gray-200">TH-002</span>
+          </div>
+          <span className="text-xs text-green-400 font-semibold">5 min ago</span>
         </div>
-        <div className='flex justify-between items-center'>
-          <span className='text-sm text-gray-300'>Camera 3</span>
-          <span className='text-green-400 font-semibold'>Online</span>
+        {/* Row 3 */}
+        <div className="flex items-center justify-between bg-gray-700 rounded p-3">
+          <div className="flex items-center gap-2">
+            <FaExclamationCircle className="text-yellow-400" />
+            <span className="text-sm text-gray-200">GA-003</span>
+          </div>
+          <span className="text-xs text-yellow-400 font-semibold">15 min ago</span>
+        </div>
+        {/* Row 4 */}
+        <div className="flex items-center justify-between bg-gray-700 rounded p-3">
+          <div className="flex items-center gap-2">
+            <FaExclamationCircle className="text-red-400" />
+            <span className="text-sm text-gray-200">TH-004</span>
+          </div>
+          <span className="text-xs text-red-400 font-semibold">45 min ago</span>
+        </div>
+        {/* Row 5 */}
+        <div className="flex items-center justify-between  bg-gray-700 rounded p-3">
+          <div className="flex items-center gap-2">
+            <FaExclamationCircle className="text-red-400" />
+            <span className="text-sm text-gray-200">GA-005</span>
+          </div>
+          <span className="text-xs text-red-400 font-semibold">1 hr ago</span>
         </div>
       </div>
     ),
@@ -211,28 +239,48 @@ const cardData = [
     key: "8",
     title: (
       <div className="flex items-center gap-2 mb-2">
-        <FaThermometerHalf className="text-gray-300 text-base" />
-        <span className='text-sm font-semibold text-gray-200'>Sensor Calibration Status</span>
+        <FaChartLine className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Log Volume (24h)</span>
       </div>
     ),
     content: (
-      <>
-        <div className="flex gap-6 my-4">
-          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
-            <FaCheckCircle className="text-green-400 text-2xl mb-2" />
-            <div className="text-green-400 text-3xl font-bold">95%</div>
-            <div className="text-sm text-gray-400">Calibrated Sensors</div>
-          </div>
-          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
-            <FaExclamationCircle className="text-yellow-400 text-2xl mb-2" />
-            <div className="text-yellow-400 text-3xl font-bold">5</div>
-            <div className="text-sm text-gray-400">Pending Calibrations</div> 
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-4xl font-bold text-blue-400 my-2">460</span>
+          <div className="flex items-center gap-4">
+            <FaArrowUp className="text-green-400 text-base" />
+            <span className="text-green-400 text-sm font-semibold">+12% vs yesterday</span>
           </div>
         </div>
-        <div className="text-sm text-gray-400">
-          Total sensors: <span className="text-white font-semibold">200</span>
+        {/* Bar chart */}
+        <div className="flex flex-col gap-1 mt-2">
+          <div className="flex items-center gap-2 mx-1">
+            <span className="text-xs text-gray-400 w-10">00:00</span>
+            <div className="bg-blue-400 h-2 rounded" style={{ width: '40%' }} />
+            <span className="text-xs text-gray-400 ml-2">45</span>
+          </div>
+          <div className="flex items-center gap-2 mx-1">
+            <span className="text-xs text-gray-400 w-10">04:00</span>
+            <div className="bg-blue-400 h-2 rounded" style={{ width: '30%' }} />
+            <span className="text-xs text-gray-400 ml-2">32</span>
+          </div>
+          <div className="flex items-center gap-2 mx-1">
+            <span className="text-xs text-gray-400 w-10">08:00</span>
+            <div className="bg-blue-400 h-2 rounded" style={{ width: '52%' }} />
+            <span className="text-xs text-gray-400 ml-2">78</span>
+          </div>
+          <div className="flex items-center gap-2 mx-1">
+            <span className="text-xs text-gray-400 w-10">12:00</span>
+            <div className="bg-blue-400 h-2 rounded" style={{ width: '63%' }} />
+            <span className="text-xs text-gray-400 ml-2">95</span>
+          </div>
+          <div className="flex items-center gap-2 mx-1">
+            <span className="text-xs text-gray-400 w-10">16:00</span>
+            <div className="bg-blue-400 h-2 rounded" style={{ width: '82%' }} />
+            <span className="text-xs text-gray-400 ml-2">123</span>
+          </div>
         </div>
-      </>
+      </div>
     ),
     style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
   }
@@ -245,7 +293,7 @@ const layout = [
   { i: "4", x: 6, y: 1, w: 6, h: 1.4, isResizable: false },
   { i: "5", x: 0, y: 2, w: 12, h: 1.7, isResizable: false },
   { i: "6", x: 0, y: 3, w: 12, h: 1.6, isResizable: false },
-  { i: "7", x: 0, y: 4, w: 12, h: 1.6, isResizable: false },
+  { i: "7", x: 0, y: 4, w: 12, h: 2.3, isResizable: false },
   { i: "8", x: 0, y: 5, w: 12, h: 1.6, isResizable: false }
 ];
 
