@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import { useSidebar } from "../context/SidebarContext";
 import MainNavbar from "./Navbar/MainNavbar";
-import Dashboard from "./Dashboard";
+import VerizonDashboard from "./VerizonDashboard";
 
 export const MainDashboard = () => {
   const { activeSection, setActiveSection } = useSidebar("verizon");
@@ -25,8 +25,8 @@ export const MainDashboard = () => {
             className="w-60" // Fixed width for Sidebar
           />
           {/* Main Content with remaining space */}
-          <div className="flex-grow">
-            {activeSection === "verizon" && <Dashboard/>}
+          <div className="flex-grow m-2">
+            {activeSection === "verizon" && <VerizonDashboard/>}
           </div>
         </div>
       </div>
