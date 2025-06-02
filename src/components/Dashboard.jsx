@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from './VerizonDashboardNavbar';
 import { HvButton } from '@hitachivantara/uikit-react-core';
 import { Refresh } from '@hitachivantara/uikit-react-icons';
 import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp } from 'react-icons/fa';

@@ -3,7 +3,7 @@ import { HvHeader, HvIconContainer, HvHeaderBrand, HvHeaderActions, HvIconButton
 import { Time } from "@hitachivantara/uikit-react-icons";
 import { FaThermometerHalf, FaCamera } from 'react-icons/fa';
 
-const Navbar = () => {
+const VerizonDashboardNavbar = () => {
     return (
         <div className='bg-blue-950 text-white'>
             <HvHeader position="relative" className="mb-lg p-2 w-full flex items-center justify-between overflow-hidden">
@@ -32,4 +32,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default VerizonDashboardNavbar;
