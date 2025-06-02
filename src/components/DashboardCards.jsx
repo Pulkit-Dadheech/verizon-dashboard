@@ -180,6 +180,61 @@ const cardData = [
       </>
     ),
     style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+  },
+  {
+    key: "7",
+    title: (
+      <div className="flex items-center gap-2 mb-2">
+        <FaCamera className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Camera Feed Status</span>
+      </div>
+    ),
+    content: (
+      <div className='flex flex-col gap-4'>
+        <div className='flex justify-between items-center'>
+          <span className='text-sm text-gray-300'>Camera 1</span>
+          <span className='text-green-400 font-semibold'>Online</span>
+        </div>
+        <div className='flex justify-between items-center'>
+          <span className='text-sm text-gray-300'>Camera 2</span>
+          <span className='text-red-400 font-semibold'>Offline</span>
+        </div>
+        <div className='flex justify-between items-center'>
+          <span className='text-sm text-gray-300'>Camera 3</span>
+          <span className='text-green-400 font-semibold'>Online</span>
+        </div>
+      </div>
+    ),
+    style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+  },
+  {
+    key: "8",
+    title: (
+      <div className="flex items-center gap-2 mb-2">
+        <FaThermometerHalf className="text-gray-300 text-base" />
+        <span className='text-sm font-semibold text-gray-200'>Sensor Calibration Status</span>
+      </div>
+    ),
+    content: (
+      <>
+        <div className="flex gap-6 my-4">
+          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
+            <FaCheckCircle className="text-green-400 text-2xl mb-2" />
+            <div className="text-green-400 text-3xl font-bold">95%</div>
+            <div className="text-sm text-gray-400">Calibrated Sensors</div>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center bg-gray-700 p-6 rounded-lg shadow-md">
+            <FaExclamationCircle className="text-yellow-400 text-2xl mb-2" />
+            <div className="text-yellow-400 text-3xl font-bold">5</div>
+            <div className="text-sm text-gray-400">Pending Calibrations</div> 
+          </div>
+        </div>
+        <div className="text-sm text-gray-400">
+          Total sensors: <span className="text-white font-semibold">200</span>
+        </div>
+      </>
+    ),
+    style: { backgroundColor: "#172554", padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
   }
 ];
 
@@ -189,7 +244,9 @@ const layout = [
   { i: "3", x: 0, y: 1, w: 6, h: 1.4, isResizable: false },
   { i: "4", x: 6, y: 1, w: 6, h: 1.4, isResizable: false },
   { i: "5", x: 0, y: 2, w: 12, h: 1.7, isResizable: false },
-  { i: "6", x: 0, y: 3, w: 12, h: 1.6, isResizable: false }
+  { i: "6", x: 0, y: 3, w: 12, h: 1.6, isResizable: false },
+  { i: "7", x: 0, y: 4, w: 12, h: 1.6, isResizable: false },
+  { i: "8", x: 0, y: 5, w: 12, h: 1.6, isResizable: false }
 ];
 
 const DashboardCards = () => {
