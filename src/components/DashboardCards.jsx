@@ -5,11 +5,13 @@ import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp, FaCheckCi
 
 // Example data for stations
 const stations = [
-  { name: "Station A", value: 8, total: 12 },
-  { name: "Station B", value: 5, total: 12 },
-  { name: "Station C", value: 12, total: 12 },
-  { name: "Station D", value: 3, total: 12 },
-  {name: "Station E",value: 7, total: 12 },
+  { name: "Station A", value: 8, total: 12, color: "#f87171"
+ }, //light red
+  { name: "Station B", value: 5, total: 12, color: "#C2410C"
+  },
+  { name: "Station C", value: 12, total: 12 , color: "#991B1B"},
+  { name: "Station D", value: 3, total: 12, color: "#FBBF24" },
+  { name: "Station E", value: 7, total: 12, color: "#FB923C" },
 ];
 
 // Define your card data, including title and content as components
@@ -139,8 +141,8 @@ const cardData = [
             <span className='text-sm text-gray-300'>{station.name}</span>
             <span className="w-[90%] mx-2 rounded bg-gray-700 overflow-hidden">
               <div
-                className="h-1.5 rounded bg-red-400"
-                style={{ width: `${Math.round((station.value / station.total) * 100)}%` }}
+                className="h-2 rounded"
+                style={{ width: `${Math.round((station.value / station.total) * 100)}%` ,backgroundColor: station.color }}
               />
             </span>
             <span className='text-lg font-semibold text-blue-400'>{station.value}</span>
