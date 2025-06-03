@@ -6,7 +6,7 @@ import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp } from 're
 import DashboardCards from './DashboardCards';
 
 const dashboardColor = {bg: 'bg-gray-100', text: 'text-black'};
-const dashboardButtonColor = 'bg-gray-200';
+const dashboardButtonColor = 'bg-white';
 
 const VerizonDashboard = () => {
     return (

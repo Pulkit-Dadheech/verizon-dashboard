@@ -14,13 +14,21 @@ import {
 } from 'react-icons/fa';
 
 // Centralized card style variables
-const cardBgColor ="#E5E7EB"; 
-const cardHeadingColor = "text-gray-700";
+const cardBgColor ="#FFFFFF"; 
+const cardHeadingColor = "text-gray-600";
 const cardInnerTextColor = "text-gray-500";
-const cardIconColor = "text-gray-700";
+const cardIconColor = "text-gray-600";
 const cardInnerTextLightColor = "text-gray-400";
-const gaugeReadingElementsBgColor = "bg-gray-300";
-const lastUpdateElementsBgColor = "bg-gray-300";
+const gaugeReadingElementsBgColor = "bg-gray-100";
+const lastUpdateElementsBgColor = "bg-gray-100";
+
+// Helper for card heading with separator
+const CardHeading = ({ icon, text }) => (
+    <div className="flex items-center gap-2 mb-3">
+      {icon}
+      <span className={`text-base font-semibold ${cardHeadingColor}`}>{text}</span>
+    </div>
+);
 
 // Example data for stations
 const stations = [
@@ -36,14 +44,18 @@ const cardData = [
   {
     key: "1",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaExclamationTriangle className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Active vs. Inactive Sensors</span>
-      </div>
+      <CardHeading
+        icon={<FaExclamationTriangle className={`${cardIconColor} text-lg`} />}
+        text="Active vs. Inactive Sensors"
+      />
     ),
     content: (
       <>
         <div>
+          <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+          />
           <div className='flex flex-row justify-between items-end mb-4 mt-2'>
             <div className='text-3xl font-bold text-green-400'>247</div>
             <div className={`text-sm ${cardInnerTextColor}`}>Active</div>
@@ -60,19 +72,29 @@ const cardData = [
         </div>
       </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "2",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaThermometerHalf className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Temperature Analytics</span>
-      </div>
+      <CardHeading
+        icon={<FaThermometerHalf className={`${cardIconColor} text-lg`} />}
+        text="Temperature Analytics"
+      />
     ),
     content: (
       <>
         <div>
+          <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+          />
           <div className='flex flex-row justify-between items-end mb-4 mt-2'>
             <div className={`text-sm ${cardInnerTextColor}`}>Max Temp</div>
             <div className='text-3xl font-bold text-orange-400'>78.5°C</div>
@@ -83,24 +105,34 @@ const cardData = [
           </div>
         </div>
         <div className="mt-4">
-          <div className="w-full rounded bg-gray-700 overflow-hidden">
+          <div className="w-full rounded bg-gray-100 overflow-hidden">
             <div className="h-2 rounded bg-gradient-to-r from-orange-400 to-blue-400" style={{ width: '60%' }} />
           </div>
         </div>
       </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "3",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaExclamationTriangle className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>High Temp Alerts</span>
-      </div>
+      <CardHeading
+        icon={<FaExclamationTriangle className={`${cardIconColor} text-lg`} />}
+        text="High Temp Alerts"
+      />
     ),
     content: (
       <>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+          />
         <div className='flex justify-between items-end'>
           <div>
             <div className='text-3xl font-bold text-yellow-400'>12</div>
@@ -115,18 +147,28 @@ const cardData = [
         <div className={`text-sm ${cardInnerTextColor}`}>Safety threshold exceeded</div>
       </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "4",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaExclamationTriangle className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Unresolved Outages</span>
-      </div>
+      <CardHeading
+        icon={<FaExclamationTriangle className={`${cardIconColor} text-lg`} />}
+        text="Unresolved Outages"
+      />
     ),
     content: (
       <>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+          />
         <div className='flex justify-between items-end'>
           <div>
             <div className='text-3xl font-bold text-red-400'>5</div>
@@ -141,22 +183,33 @@ const cardData = [
         <div className={`text-sm ${cardInnerTextColor}`}>Pending resolution</div>
       </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "5",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaThermometerHalf className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Location-wise Fault Distribution</span>
-      </div>
+      <CardHeading
+        icon={<FaThermometerHalf className={`${cardIconColor} text-lg`} />}
+        text="Location-wise Fault Distribution"
+      />
     ),
     content: (
+      <>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+          />
       <div className='flex flex-col gap-4'>
         {stations.map((station) => (
           <div className='flex justify-between items-center' key={station.name}>
             <span className={`text-sm ${cardInnerTextColor}`}>{station.name}</span>
-            <span className="w-[90%] mx-2 rounded bg-gray-700 overflow-hidden">
+            <span className="w-[90%] mx-2 rounded bg-gray-100 overflow-hidden">
               <div
                 className="h-2 rounded"
                 style={{ width: `${Math.round((station.value / station.total) * 100)}%`, backgroundColor: station.color }}
@@ -166,19 +219,30 @@ const cardData = [
           </div>
         ))}
       </div>
+      </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "6",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaCamera className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Gauge Reading Accuracy Check</span>
-      </div>
+      <CardHeading
+        icon={<FaCamera className={`${cardIconColor} text-lg`} />}
+        text="Gauge Reading Accuracy Check"
+      />
     ),
     content: (
       <>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+        />
         <div className="flex gap-6 mb-4">
           <div className={`flex-1 flex flex-col items-center justify-center ${gaugeReadingElementsBgColor} p-6 rounded-lg shadow-md`}>
             <FaCheckCircle className="text-green-400 text-2xl mb-2" />
@@ -196,17 +260,28 @@ const cardData = [
         </div>
       </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", borderRadius: "8px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "7",
     title: (
-      <div className="flex items-center gap-2 mb-5">
-        <FaClock className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Last Update Age</span>
-      </div>
+      <CardHeading
+        icon={<FaClock className={`${cardIconColor} text-lg`} />}
+        text="Last Update Age"
+      />
     ),
     content: (
+      <>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+        />
       <div className="flex flex-col gap-2">
         {/* Row 1 */}
         <div className={`flex items-center justify-between ${lastUpdateElementsBgColor} rounded p-3`}>  
@@ -249,24 +324,38 @@ const cardData = [
           <span className="text-xs text-red-400 font-semibold">1 hr ago</span>
         </div>
       </div>
+      </>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   },
   {
     key: "8",
     title: (
-      <div className="flex items-center gap-2 mb-2">
-        <FaChartLine className={`${cardIconColor} text-base`} />
-        <span className={`text-sm font-semibold ${cardHeadingColor}`}>Log Volume (24h)</span>
-      </div>
+      <CardHeading
+        icon={<FaChartLine className={`${cardIconColor} text-lg`} />}
+        text="Log Volume (24h)"
+      />
     ),
     content: (
       <div>
+        <hr
+            className="border-t border-black/20 border-[0.5px] mb-5 w-[calc(100%+40px)] -mx-5"
+            style={{ borderColor: "rgba(0,0,0,0.15)" }}
+        />
         <div className="flex items-center justify-between mb-2">
           <span className="text-4xl font-bold text-blue-400 my-2">460</span>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 border-1 p-2 border-gray-300 rounded">
             <FaArrowUp className="text-green-400 text-base" />
-            <span className="text-green-400 text-sm font-semibold">+12% vs yesterday</span>
+            <span className="text-green-400 text-sm font-semibold">
+              <span className="text-lg">+12%</span> vs yesterday
+            </span>
+
           </div>
         </div>
         {/* Bar chart */}
@@ -299,19 +388,25 @@ const cardData = [
         </div>
       </div>
     ),
-    style: { backgroundColor: cardBgColor, padding: "20px", boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }
+    style: {
+      backgroundColor: cardBgColor,
+      padding: "20px",
+      borderRadius: "16px",
+      border: "0.5px solid rgba(0,0,0,0.15)",
+      boxShadow: "0 4px 16px 0 rgba(0,0,0,0.07)"
+    }
   }
 ];
 
 const layout = [
-  { i: "1", x: 0, y: 0, w: 6, h: 1.4, isResizable: false },
-  { i: "2", x: 6, y: 0, w: 6, h: 1.4, isResizable: false },
-  { i: "3", x: 0, y: 1, w: 6, h: 1.4, isResizable: false },
-  { i: "4", x: 6, y: 1, w: 6, h: 1.4, isResizable: false },
-  { i: "5", x: 0, y: 2, w: 12, h: 1.7, isResizable: false },
-  { i: "6", x: 0, y: 3, w: 12, h: 1.6, isResizable: false },
+  { i: "1", x: 0, y: 0, w: 6, h: 1.5, isResizable: false },
+  { i: "2", x: 6, y: 0, w: 6, h: 1.5, isResizable: false },
+  { i: "3", x: 0, y: 1, w: 6, h: 1.5, isResizable: false },
+  { i: "4", x: 6, y: 1, w: 6, h: 1.5, isResizable: false },
+  { i: "5", x: 0, y: 2, w: 12, h: 1.9, isResizable: false },
+  { i: "6", x: 0, y: 3, w: 12, h: 1.7, isResizable: false },
   { i: "7", x: 0, y: 4, w: 12, h: 2.3, isResizable: false },
-  { i: "8", x: 0, y: 5, w: 12, h: 1.6, isResizable: false }
+  { i: "8", x: 0, y: 5, w: 12, h: 1.7, isResizable: false }
 ];
 
 const DashboardCards = () => {

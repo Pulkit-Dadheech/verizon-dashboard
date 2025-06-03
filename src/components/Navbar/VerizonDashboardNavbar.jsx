@@ -7,7 +7,7 @@ const VerizonDashboardNavbar = () => {
 
     const NavbarSubheadingColor = 'text-gray-500';
     return (
-        <div className='bg-gray-200 text-black'>
+        <div className='bg-white text-black'>
             <HvHeader position="relative" className="mb-lg p-2 w-full flex items-center justify-between overflow-hidden">
                 <div className="flex items-center">
                     <HvIconContainer color="warning" size="sm">
