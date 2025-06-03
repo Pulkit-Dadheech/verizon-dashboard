@@ -387,6 +387,7 @@ const cardData = [
           </div>
         </div>
       </div>
+      </div>
     ),
     style: {
       backgroundColor: cardBgColor,
