@@ -176,7 +176,9 @@ const cardData = [
           <div className={`text-sm ${cardInnerTextLightColor}`}>Active</div>
         </div>
         <div className='flex items-center mt-3'>
-          <FaClock className='text-blue-400 mr-2' />
+          <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500  mr-2">
+            <FaClock className='text-blue-400' />
+          </span>
           <span className='text-sm text-blue-300'>Avg: 2.4h</span>
         </div>
         <hr className='border-t border-gray-600 my-4' />
@@ -245,12 +247,16 @@ const cardData = [
         />
         <div className="flex gap-6 mb-4">
           <div className={`flex-1 flex flex-col items-center justify-center ${gaugeReadingElementsBgColor} p-6 rounded-lg shadow-md`}>
-            <FaCheckCircle className="text-green-400 text-2xl mb-2" />
+            <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500  mb-2">
+              <FaCheckCircle className="text-green-400 text-2xl" />
+            </span>
             <div className="text-green-400 text-3xl font-bold">98.51%</div>
             <div className={`text-sm ${cardInnerTextColor}`}>Accuracy Rate</div>
           </div>
           <div className={`flex-1 flex flex-col items-center justify-center ${gaugeReadingElementsBgColor} p-6 rounded-lg shadow-md`}>
-            <FaExclamationCircle className="text-yellow-400 text-2xl mb-2" />
+            <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500 mb-2">
+              <FaExclamationCircle className="text-yellow-400 text-2xl" />
+            </span>
             <div className="text-yellow-400 text-3xl font-bold">23</div>
             <div className={`text-sm ${cardInnerTextColor}`}>Anomalies</div>
           </div>
@@ -302,7 +308,9 @@ const cardData = [
         {/* Row 3 */}
         <div className={`flex items-center justify-between ${lastUpdateElementsBgColor} rounded p-3`}>
           <div className="flex items-center gap-2">
-            <FaExclamationCircle className="text-yellow-400" />
+            <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500">
+              <FaExclamationCircle className="text-yellow-400" />
+            </span>
             <span className={`text-sm ${cardHeadingColor}`}>GA-003</span>
           </div>
           <span className="text-xs text-yellow-400 font-semibold">15 min ago</span>
@@ -310,7 +318,9 @@ const cardData = [
         {/* Row 4 */}
         <div className={`flex items-center justify-between ${lastUpdateElementsBgColor} rounded p-3`}>
           <div className="flex items-center gap-2">
-            <FaExclamationCircle className="text-red-400" />
+            <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500">
+              <FaExclamationCircle className="text-red-400" />
+            </span>
             <span className={`text-sm ${cardHeadingColor}`}>TH-004</span>
           </div>
           <span className="text-xs text-red-400 font-semibold">45 min ago</span>
@@ -318,7 +328,9 @@ const cardData = [
         {/* Row 5 */}
         <div className={`flex items-center justify-between ${lastUpdateElementsBgColor} rounded p-3`}>
           <div className="flex items-center gap-2">
-            <FaExclamationCircle className="text-red-400" />
+            <span className="inline-flex items-center justify-center rounded-full border-1 border-gray-500">
+              <FaExclamationCircle className="text-red-400" />
+            </span>
             <span className={`text-sm ${cardHeadingColor}`}>GA-005</span>
           </div>
           <span className="text-xs text-red-400 font-semibold">1 hr ago</span>
