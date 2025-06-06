@@ -135,17 +135,17 @@ const bushingTableData = [
   { label: "B3", low: 54, avg: 57, max: 61 },
 ];
 // Use images from public folder
-const bushingImageUrl = "/bushing-thermal.jpg";
+const bushingImageUrl = "/images/bushing-thermal.png";
 const bushingTimestamp = "2022-02-10 14:58:59";
 
 // Data for Transformer Indicators View (key 4)
 const tapChanger = {
-  image: "/tap-changer.jpg",
+  image: "/images/tap-changer.png",
   position: "1L, 3R, 6R",
   timestamp: "2022-02-10 14:57:56",
 };
 const temperatureGauges = {
-  image: "/temperature-gauges.jpg",
+  image: "/images/temperature-gauges.png",
   primary: 50,
   secondary: 50,
   liquid: 48,
