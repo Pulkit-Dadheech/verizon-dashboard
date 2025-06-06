@@ -26,7 +26,7 @@ const CardHeading = ({ icon, text }) => (
 
 const SummaryDashboard = () => {
     
-    const dashboardColor = { bg: 'bg-gray-100', text: 'text-black' };
+    const dashboardColor = { bg: 'bg-gray-100', text: 'text-gray-500' };
     const dashboardButtonColor = 'bg-white';
     const cardBgColor ="#FFFFFF"; 
     const cardInnerTextColor = "text-gray-500";
