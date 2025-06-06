@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './Navbar/VerizonDashboardNavbar';
+import Navbar from '../Navbar/VerizonDashboardNavbar';
 import { HvButton } from '@hitachivantara/uikit-react-core';
 import { Refresh } from '@hitachivantara/uikit-react-icons';
 import { FaThermometerHalf, FaExclamationTriangle, FaClock, FaArrowUp } from 'react-icons/fa';
-import DashboardCards from './DashboardCards';
+import DashboardCards from '../DashboardCards';
 
 const dashboardColor = {bg: 'bg-gray-100', text: 'text-black'};
 const dashboardButtonColor = 'bg-white';

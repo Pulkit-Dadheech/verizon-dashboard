@@ -2,13 +2,16 @@ import React from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import { useSidebar } from "../context/SidebarContext";
 import MainNavbar from "./Navbar/MainNavbar";
-import VerizonDashboard from "./VerizonDashboard";
+import VerizonDashboard from "./dashboard/VerizonDashboard";
+import ThermalSensorDashboard from "./dashboard/ThermalSensor/ThermalSensorDashboard";
+import GaugeMonitorDashboard from "./dashboard/GaugeMonitor/GaugeMonitorDashboard";
+import SummaryDashboard from "./dashboard/SummaryDashboard/SummaryDashboard";
 
 export const MainDashboard = () => {
-  const { activeSection, setActiveSection } = useSidebar("verizon");
-  const sidebarSections = ["verizon"];
+  const { activeSection, setActiveSection } = useSidebar("summary");
+  const sidebarSections = ["verizon","thermal","gauge","summary"];
   const sidebarIcons = [null, null]; // Use null for no icons
-  const sidebarNames = ["Verizon Dashboard"];
+  const sidebarNames = ["Verizon Dashboard","Thermal Sensor Dashboard","Gauge Monitor Dashboard","Summary Dashboard"];
 
   return (
     <>
@@ -27,6 +30,9 @@ export const MainDashboard = () => {
           {/* Main Content with remaining space */}
           <div className="flex-grow m-2">
             {activeSection === "verizon" && <VerizonDashboard/>}
+            {activeSection === "thermal" && <ThermalSensorDashboard/>}
+            {activeSection === "gauge" && <GaugeMonitorDashboard/>}
+            {activeSection === "summary" && <SummaryDashboard/>}
           </div>
         </div>
       </div>
