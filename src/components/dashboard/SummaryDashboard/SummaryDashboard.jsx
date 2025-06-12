@@ -135,17 +135,17 @@ const bushingTableData = [
   { label: "B3", low: 54, avg: 57, max: 61 },
 ];
 // Use images from public folder
-const bushingImageUrl = "/bushing-thermal.jpg";
+const bushingImageUrl = "/bushing_thermal.png";
 const bushingTimestamp = "2022-02-10 14:58:59";
 
 // Data for Transformer Indicators View (key 4)
 const tapChanger = {
-  image: "/tap-changer.jpg",
+  image: "/tap-changer.png", // Corrected extension
   position: "1L, 3R, 6R",
   timestamp: "2022-02-10 14:57:56",
 };
 const temperatureGauges = {
-  image: "/temperature-gauges.jpg",
+  image: "/temperature-gauges.png", // Corrected extension
   primary: 50,
   secondary: 50,
   liquid: 48,
@@ -169,10 +169,11 @@ const cardData = [
                 style={{ borderColor: "rgba(0,0,0,0.15)" }}
               />
                 <div className="bg-white flex items-center justify-center">
-                    <video width="95%" autoPlay loop muted playsinline>
+                    {/* <video width="95%" autoPlay loop muted playsinline>
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
-                    </video>
+                    </video> */}
+                    <span><h3 className='mt-5 pt-5'>add video here</h3></span>
                 </div>
             </div>
           </>
