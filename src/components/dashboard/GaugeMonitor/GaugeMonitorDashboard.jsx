@@ -1,19 +1,87 @@
 import React, { useEffect, useState } from "react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import GaugeTable from './GaugeTable';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import GaugeTable from "./GaugeTable";
+import { HvButton } from "@hitachivantara/uikit-react-core";
+import { Refresh } from "@hitachivantara/uikit-react-icons";
+
+const dashboardColor = { bg: "bg-gray-100", text: "text-black" };
+const dashboardButtonColor = "bg-white";
+
+const FILTERS = [
+  { label: "Last Hour", value: "1h" },
+  { label: "Last 12 Hours", value: "12h" },
+  { label: "Last 24 Hours", value: "24h" },
+  { label: "Last Week", value: "7d" },
+  { label: "Last 30 Days", value: "30d" },
+];
+
+function filterData(data, filter) {
+  if (!data.length) return [];
+  const last = data[data.length - 1];
+  const lastDate = new Date(
+    last.Year,
+    last.Month - 1,
+    last.Day,
+    last.Hour,
+    last.Minute
+  );
+  let cutoff = new Date(lastDate);
+
+  switch (filter) {
+    case "1h":
+      cutoff.setHours(cutoff.getHours() - 1);
+      break;
+    case "12h":
+      cutoff.setHours(cutoff.getHours() - 12);
+      break;
+    case "24h":
+      cutoff.setHours(cutoff.getHours() - 24);
+      break;
+    case "7d":
+      cutoff.setDate(cutoff.getDate() - 7);
+      break;
+    case "30d":
+      cutoff.setDate(cutoff.getDate() - 30);
+      break;
+    default:
+      return data;
+  }
+
+  return data.filter((row) => {
+    const rowDate = new Date(
+      row.Year,
+      row.Month - 1,
+      row.Day,
+      row.Hour,
+      row.Minute
+    );
+    return rowDate >= cutoff && rowDate <= lastDate;
+  });
+}
 
 const GaugeMonitorDashboard = () => {
   const [data, setData] = useState([]);
-  const [displayCount, setDisplayCount] = useState(20);
+  const [filter, setFilter] = useState("1h");
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
-    fetch('/gauge-data.json')
-      .then(res => res.json())
+    fetch("/gauge-data.json")
+      .then((res) => res.json())
       .then(setData);
   }, []);
 
-  // Prepare data for the graph
-  const chartData = data.slice(0, displayCount).map(row => ({
+  const filteredData = filterData(data, filter);
+
+  const chartData = filteredData.map((row) => ({
     time: `${row.Hour}:${row.Minute}`,
     gauge_temp: row.gauge_temp,
   }));
@@ -21,48 +89,80 @@ const GaugeMonitorDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100 text-black">
       <div className="flex justify-between items-center mt-5 mx-5 mb-2">
-        <div className="text-2xl font-bold">Gauge Monitor Dashboard</div>
-        <div className="flex items-center rounded-lg shadow-lg bg-white">
-          <button
-            className="m-2 rounded-lg text-white bg-blue-500 px-4 py-2"
+        <div className={`text-2xl font-bold ${dashboardColor.bg}`}>
+          Gauge Monitor Dashboard
+        </div>
+        <div
+          className={`flex items-center rounded-lg shadow-lg ${dashboardButtonColor}`}
+        >
+          <HvButton
+            variant="primary"
+            size="md"
+            radius="round"
             disabled={false}
-            onClick={() => setData([...data])}
+            className={`m-2 rounded-lg text-white ${dashboardColor.bg}`}
+            startIcon={<Refresh className={dashboardColor.text} />}
           >
-            Refresh Data
-          </button>
+            <div className={`${dashboardColor.text} text-sm font-semibold`}>
+              Refresh Data
+            </div>
+          </HvButton>
         </div>
       </div>
       <div className="p-5">
         <div className="bg-white rounded-lg shadow-lg p-5">
           <div className="flex justify-between items-center mb-4">
             <div className="text-lg font-semibold">Analog Gauge</div>
-            <div>
-              <label className="mr-2 text-sm">Show last</label>
-              <select
-                value={displayCount}
-                onChange={e => setDisplayCount(Number(e.target.value))}
-                className="border rounded px-2 py-1 text-sm"
+            <div className="relative">
+              <button
+                className="bg-blue-700 text-white px-4 py-2 rounded shadow"
+                onClick={() => setShowDropdown((v) => !v)}
               >
-                {[10, 20, 30, 50, 100, data.length].map(n => (
-                  <option key={n} value={n}>{n === data.length ? "All" : n}</option>
-                ))}
-              </select>
-              <span className="ml-1 text-sm">records</span>
+                Filter
+              </button>
+              {showDropdown && (
+                <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow z-10">
+                  {FILTERS.map((f) => (
+                    <div
+                      key={f.value}
+                      className={`px-4 py-2 cursor-pointer hover:bg-blue-100 ${
+                        filter === f.value ? "font-bold text-blue-700" : ""
+                      }`}
+                      onClick={() => {
+                        setFilter(f.value);
+                        setShowDropdown(false);
+                      }}
+                    >
+                      {f.label}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={chartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+            <LineChart
+              data={chartData}
+              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+            >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="time" />
               <YAxis />
               <Tooltip />
               <Legend />
-              <Line type="linear" dataKey="gauge_temp" stroke="#1976d2" name="Gauge Temp" />
+              <Line
+                type="linear"
+                dataKey="gauge_temp"
+                stroke="#1976d2"
+                name="Gauge Temp"
+              />
             </LineChart>
           </ResponsiveContainer>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-5 mt-8">
-          <div className="text-lg font-semibold mb-4">Historical Reading – Gauge Readings</div>
+          <div className="text-lg font-semibold mb-4">
+            Historical Reading – Gauge Readings
+          </div>
           <GaugeTable />
         </div>
       </div>
