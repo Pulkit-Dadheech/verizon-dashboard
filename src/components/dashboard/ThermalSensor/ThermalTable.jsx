@@ -9,6 +9,37 @@ const ThermalTable = () => {
       .then(setData);
   }, []);
 
+  // Calculate rowSpans for each grouping
+  const getRowSpans = (data, keyList) => {
+    const spans = [];
+    let prev = {};
+    data.forEach((row, idx) => {
+      keyList.forEach(key => {
+        if (row[key] !== prev[key]) {
+          // Count how many rows this value will span
+          let span = 1;
+          for (let j = idx + 1; j < data.length; j++) {
+            if (
+              data[j][key] === row[key] &&
+              keyList.every((k, i) => i < keyList.indexOf(key) ? data[j][k] === row[k] : true)
+            ) {
+              span++;
+            } else {
+              break;
+            }
+          }
+          spans[idx] = spans[idx] || {};
+          spans[idx][key] = span;
+        }
+        prev[key] = row[key];
+      });
+    });
+    return spans;
+  };
+
+  const keyList = ["Year", "Month", "Day", "Hour"];
+  const rowSpans = getRowSpans(data, keyList);
+
   return (
     <div className="overflow-x-auto p-4">
       <table className="min-w-full border border-gray-300 bg-white">
@@ -27,10 +58,17 @@ const ThermalTable = () => {
         <tbody>
           {data.map((row, idx) => (
             <tr key={idx}>
-              <td className="border px-2 py-1 text-center">{row.Year}</td>
-              <td className="border px-2 py-1 text-center">{row.Month}</td>
-              <td className="border px-2 py-1 text-center">{row.Day}</td>
-              <td className="border px-2 py-1 text-center">{row.Hour}</td>
+              {keyList.map(key =>
+                rowSpans[idx] && rowSpans[idx][key] ? (
+                  <td
+                    key={key}
+                    className="border px-2 py-1 text-center align-middle"
+                    rowSpan={rowSpans[idx][key]}
+                  >
+                    {row[key]}
+                  </td>
+                ) : null
+              )}
               <td className="border px-2 py-1 text-center">{row.Minute}</td>
               <td className="border px-2 py-1 text-center">{row.tempmax_attribute}</td>
               <td className="border px-2 py-1 text-center">{row.tempavg_attribute}</td>
