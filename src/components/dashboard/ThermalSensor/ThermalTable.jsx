@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 
-const ThermalTable = () => {
-  const [data, setData] = useState([]);
+const ThermalTable = ({ data = [] }) => {
+  const [tableData, setTableData] = useState(data);
 
   useEffect(() => {
-    fetch('/thermal-data.json')
-      .then(res => res.json())
-      .then(setData);
-  }, []);
+    if (data.length) {
+      setTableData(data);
+    } else {
+      fetch('/thermal-data.json')
+        .then(res => res.json())
+        .then(setTableData);
+    }
+  }, [data]);
 
   // Calculate rowSpans for each grouping
   const getRowSpans = (data, keyList) => {
@@ -38,7 +42,7 @@ const ThermalTable = () => {
   };
 
   const keyList = ["Year", "Month", "Day", "Hour"];
-  const rowSpans = getRowSpans(data, keyList);
+  const rowSpans = getRowSpans(tableData, keyList);
 
   return (
     <div className="overflow-x-auto p-4">
@@ -56,7 +60,7 @@ const ThermalTable = () => {
           </tr>
         </thead>
         <tbody>
-          {data.map((row, idx) => (
+          {tableData.map((row, idx) => (
             <tr key={idx}>
               {keyList.map(key =>
                 rowSpans[idx] && rowSpans[idx][key] ? (

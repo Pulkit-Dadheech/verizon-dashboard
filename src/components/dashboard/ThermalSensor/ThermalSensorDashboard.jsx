@@ -70,8 +70,10 @@ function filterData(data, filter) {
 
 const ThermalSensorDashboard = () => {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState("1h");
+  const [filter, setFilter] = useState("12h");
   const [showDropdown, setShowDropdown] = useState(false);
+  const [tableFilter, setTableFilter] = useState("12h");
+  const [showTableDropdown, setShowTableDropdown] = useState(false);
 
   useEffect(() => {
     fetch("/thermal-data.json")
@@ -80,6 +82,7 @@ const ThermalSensorDashboard = () => {
   }, []);
 
   const filteredData = filterData(data, filter);
+  const filteredTableData = filterData(data, tableFilter);
 
   const chartData = filteredData.map((row) => ({
     time: `${row.Hour}:${row.Minute}`,
@@ -177,10 +180,38 @@ const ThermalSensorDashboard = () => {
           </ResponsiveContainer>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-4 mt-8">
-          <div className="text-lg font-semibold mb-4">
-            Historical Reading – Thermal Camera
+          <div className="flex justify-between items-center mb-4">
+            <div className="text-lg font-semibold">
+              Historical Reading – Thermal Camera
+            </div>
+            <div className="relative">
+              <button
+                className="bg-blue-700 text-white px-4 py-2 rounded shadow"
+                onClick={() => setShowTableDropdown((v) => !v)}
+              >
+                Filter
+              </button>
+              {showTableDropdown && (
+                <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow z-10">
+                  {FILTERS.map((f) => (
+                    <div
+                      key={f.value}
+                      className={`px-4 py-2 cursor-pointer hover:bg-blue-100 ${
+                        tableFilter === f.value ? "font-bold text-blue-700" : ""
+                      }`}
+                      onClick={() => {
+                        setTableFilter(f.value);
+                        setShowTableDropdown(false);
+                      }}
+                    >
+                      {f.label}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-          <ThermalTable />
+          <ThermalTable data={filteredTableData} />
         </div>
       </div>
     </div>

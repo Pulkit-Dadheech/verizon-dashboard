@@ -70,8 +70,12 @@ function filterData(data, filter) {
 
 const GaugeMonitorDashboard = () => {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState("1h");
+  const [filter, setFilter] = useState("12h");
   const [showDropdown, setShowDropdown] = useState(false);
+
+  // Add state for table filter
+  const [tableFilter, setTableFilter] = useState("12h");
+  const [showTableDropdown, setShowTableDropdown] = useState(false);
 
   useEffect(() => {
     fetch("/gauge-data.json")
@@ -80,6 +84,7 @@ const GaugeMonitorDashboard = () => {
   }, []);
 
   const filteredData = filterData(data, filter);
+  const filteredTableData = filterData(data, tableFilter);
 
   const chartData = filteredData.map((row) => ({
     time: `${row.Hour}:${row.Minute}`,
@@ -160,10 +165,39 @@ const GaugeMonitorDashboard = () => {
           </ResponsiveContainer>
         </div>
         <div className="bg-white rounded-lg shadow-lg p-5 mt-8">
-          <div className="text-lg font-semibold mb-4">
-            Historical Reading – Gauge Readings
+          <div className="flex justify-between items-center mb-4">
+            <div className="text-lg font-semibold">
+              Historical Reading – Gauge Readings
+            </div>
+            <div className="relative">
+              <button
+                className="bg-blue-700 text-white px-4 py-2 rounded shadow"
+                onClick={() => setShowTableDropdown((v) => !v)}
+              >
+                Filter
+              </button>
+              {showTableDropdown && (
+                <div className="absolute right-0 mt-2 w-40 bg-white border rounded shadow z-10">
+                  {FILTERS.map((f) => (
+                    <div
+                      key={f.value}
+                      className={`px-4 py-2 cursor-pointer hover:bg-blue-100 ${
+                        tableFilter === f.value ? "font-bold text-blue-700" : ""
+                      }`}
+                      onClick={() => {
+                        setTableFilter(f.value);
+                        setShowTableDropdown(false);
+                      }}
+                    >
+                      {f.label}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-          <GaugeTable />
+          {/* Pass filteredTableData to GaugeTable */}
+          <GaugeTable data={filteredTableData} />
         </div>
       </div>
     </div>

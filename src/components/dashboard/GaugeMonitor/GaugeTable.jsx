@@ -1,14 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const GaugeTable = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch('/gauge-data.json')
-      .then(res => res.json())
-      .then(setData);
-  }, []);
-
+const GaugeTable = ({ data = [] }) => {
   // Calculate rowSpans for each grouping
   const getRowSpans = (data, keyList) => {
     const spans = [];
