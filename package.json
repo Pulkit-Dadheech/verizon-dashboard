@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node excel-to-json.cjs",
     "dev": "vite",
+    "prebuild": "node excel-to-json.cjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

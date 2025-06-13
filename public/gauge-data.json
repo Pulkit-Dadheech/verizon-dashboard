@@ -1,0 +1,954 @@
+[
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 1,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 2,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 3,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 4,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 5,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 6,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 7,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 8,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 9,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 10,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 11,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 12,
+    "gauge_temp": 50
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 13,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 14,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 15,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 16,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 17,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 18,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 19,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 20,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 21,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 22,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 23,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 24,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 25,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 26,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 27,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 28,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 29,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 30,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 31,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 32,
+    "gauge_temp": 42
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 33,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 34,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 35,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 36,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 37,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 38,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 39,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 40,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 41,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 42,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 43,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 44,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 45,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 46,
+    "gauge_temp": 42
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 47,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 48,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 49,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 50,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 51,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 52,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 53,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 54,
+    "gauge_temp": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 55,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 56,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 57,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 58,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 59,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 0,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 1,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 2,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 3,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 4,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 5,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 6,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 7,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 8,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 9,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 10,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 11,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 12,
+    "gauge_temp": 50
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 13,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 14,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 15,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 16,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 17,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 18,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 19,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 20,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 21,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 22,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 23,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 24,
+    "gauge_temp": 48
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 25,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 26,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 27,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 28,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 29,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 30,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 31,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 32,
+    "gauge_temp": 42
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 33,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 34,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 35,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 36,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 37,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 38,
+    "gauge_temp": 41
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 39,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 40,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 41,
+    "gauge_temp": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 42,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 43,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 44,
+    "gauge_temp": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 45,
+    "gauge_temp": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 46,
+    "gauge_temp": 42
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 47,
+    "gauge_temp": 45
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 48,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 49,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 50,
+    "gauge_temp": 49
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 51,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 52,
+    "gauge_temp": 43
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 53,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 54,
+    "gauge_temp": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 55,
+    "gauge_temp": 47
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 56,
+    "gauge_temp": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 57,
+    "gauge_temp": 44
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 58,
+    "gauge_temp": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 59,
+    "gauge_temp": 49
+  }
+]
