@@ -1,84 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const ThermalTable = ({ data = [] }) => {
-  const [tableData, setTableData] = useState(data);
-
-  useEffect(() => {
-    if (data.length) {
-      setTableData(data);
-    } else {
-      fetch('/thermal-data.json')
-        .then(res => res.json())
-        .then(setTableData);
-    }
-  }, [data]);
-
-  // Calculate rowSpans for each grouping
-  const getRowSpans = (data, keyList) => {
-    const spans = [];
-    let prev = {};
-    data.forEach((row, idx) => {
-      keyList.forEach(key => {
-        if (row[key] !== prev[key]) {
-          // Count how many rows this value will span
-          let span = 1;
-          for (let j = idx + 1; j < data.length; j++) {
-            if (
-              data[j][key] === row[key] &&
-              keyList.every((k, i) => i < keyList.indexOf(key) ? data[j][k] === row[k] : true)
-            ) {
-              span++;
-            } else {
-              break;
-            }
-          }
-          spans[idx] = spans[idx] || {};
-          spans[idx][key] = span;
-        }
-        prev[key] = row[key];
-      });
-    });
-    return spans;
-  };
-
-  const keyList = ["Year", "Month", "Day", "Hour"];
-  const rowSpans = getRowSpans(tableData, keyList);
+  if (!data.length) return <div className="p-4">No records to display</div>;
 
   return (
     <div className="overflow-x-auto p-4">
       <table className="min-w-full border border-gray-300 bg-white">
         <thead>
           <tr>
-            <th className="border px-2 py-1 bg-yellow-300 text-center">Year</th>
-            <th className="border px-2 py-1 bg-yellow-300 text-center">Month</th>
-            <th className="border px-2 py-1 bg-yellow-300 text-center">Day</th>
-            <th className="border px-2 py-1 bg-yellow-300 text-center">Hour</th>
-            <th className="border px-2 py-1 bg-yellow-300 text-center">Minute</th>
+            <th className="border px-2 py-1 bg-yellow-300 text-center">Date</th>
+            <th className="border px-2 py-1 bg-yellow-300 text-center">Timestamp</th>
             <th className="border px-2 py-1 bg-blue-200 text-center">tempmax_attribute</th>
             <th className="border px-2 py-1 bg-blue-200 text-center">tempavg_attribute</th>
             <th className="border px-2 py-1 bg-blue-200 text-center">tempmin_attribute</th>
           </tr>
         </thead>
         <tbody>
-          {tableData.map((row, idx) => (
-            <tr key={idx}>
-              {keyList.map(key =>
-                rowSpans[idx] && rowSpans[idx][key] ? (
-                  <td
-                    key={key}
-                    className="border px-2 py-1 text-center align-middle"
-                    rowSpan={rowSpans[idx][key]}
-                  >
-                    {row[key]}
-                  </td>
-                ) : null
-              )}
-              <td className="border px-2 py-1 text-center">{row.Minute}</td>
-              <td className="border px-2 py-1 text-center">{row.tempmax_attribute}</td>
-              <td className="border px-2 py-1 text-center">{row.tempavg_attribute}</td>
-              <td className="border px-2 py-1 text-center">{row.tempmin_attribute}</td>
-            </tr>
-          ))}
+          {data.map((row, idx) => {
+            const date = `${row.Year}-${String(row.Month).padStart(2,'0')}-${String(row.Day).padStart(2,'0')}`;
+            const timestamp = `${String(row.Hour).padStart(2,'0')}:${String(row.Minute).padStart(2,'0')}`;
+            return (
+              <tr key={idx} className={idx % 2 ? "bg-white" : "bg-gray-50"}>
+                <td className="border px-2 py-1 text-center">{date}</td>
+                <td className="border px-2 py-1 text-center">{timestamp}</td>
+                <td className="border px-2 py-1 text-center">{row.tempmax_attribute}</td>
+                <td className="border px-2 py-1 text-center">{row.tempavg_attribute}</td>
+                <td className="border px-2 py-1 text-center">{row.tempmin_attribute}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
