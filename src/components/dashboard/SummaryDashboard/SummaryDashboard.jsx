@@ -2,7 +2,7 @@ import React from 'react';
 import SummaryDashboardNavbar from '../../Navbar/SummaryDashboardNavbar';
 import { HvDashboard } from '@hitachivantara/uikit-react-lab';
 import { HvSection } from '@hitachivantara/uikit-react-core';
-import { FaExclamationTriangle, FaThermometerHalf, FaClock, FaArrowUp } from 'react-icons/fa';
+import { FaExclamationTriangle, FaThermometerHalf } from 'react-icons/fa';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -27,11 +27,8 @@ const CardHeading = ({ icon, text }) => (
 const SummaryDashboard = () => {
     
     const dashboardColor = { bg: 'bg-gray-100', text: 'text-gray-500' };
-    const dashboardButtonColor = 'bg-white';
     const cardBgColor ="#FFFFFF"; 
-    const cardInnerTextColor = "text-gray-500";
     const cardIconColor = "text-gray-600";
-    const cardInnerTextLightColor = "text-gray-400";
     
     const layout = [
         { i: "1", x: 0, y: 0, w: 6, h: 2, isResizable: false },

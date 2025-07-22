@@ -1,10 +1,8 @@
 import React from "react";
 import SidebarButton from "./SidebarButton";
-import { useSidebar } from "../../context/SidebarContext";
 
 const Sidebar = (props) => {
   const { titleName, activeSectionList, LogoComponents, sectionNames } = props;
-  const { activeSection, setActiveSection } = useSidebar(activeSectionList[0]);
 
   return (
     <aside className="w-60 min-h-screen bg-white/90 border-r border-slate-200 flex flex-col py-8 px-3 shadow-md">

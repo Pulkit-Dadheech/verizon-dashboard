@@ -8,7 +8,7 @@ import GaugeMonitorDashboard from "./dashboard/GaugeMonitor/GaugeMonitorDashboar
 import SummaryDashboard from "./dashboard/SummaryDashboard/SummaryDashboard";
 
 const MainDashboard = () => {
-  const { activeSection, setActiveSection } = useSidebar("verizon");
+  const { activeSection } = useSidebar("verizon");
   const sidebarSections = ["verizon","thermal","gauge","summary"];
   const sidebarIcons = [null, null]; // Use null for no icons
   const sidebarNames = ["Verizon Dashboard","Thermal Sensor Dashboard","Gauge Monitor Dashboard","Summary Dashboard"];
