@@ -1,0 +1,1192 @@
+[
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 1,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 2,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 41.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 3,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 4,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 5,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 6,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 7,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 8,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 9,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 10,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 11,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 12,
+    "tempmax_attribute": 50,
+    "tempavg_attribute": 45,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 13,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 14,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 15,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 16,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 17,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 18,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 19,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 41,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 20,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 44,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 21,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 40,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 22,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 36.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 23,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 41.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 24,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 25,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 26,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 27,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 28,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 29,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 44.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 30,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 31,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 32,
+    "tempmax_attribute": 42,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 33,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 34,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 35,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 36,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 35,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 37,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 38,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 39,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 40,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 40,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 41,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 42,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 41,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 43,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 44,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 39,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 45,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 46,
+    "tempmax_attribute": 42,
+    "tempavg_attribute": 39,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 47,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 48,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 49,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 50,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 44.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 51,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 41,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 52,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 40,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 53,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 54,
+    "tempmax_attribute": 37,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 55,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 56,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 37,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 57,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 58,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 0,
+    "Minute": 59,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 0,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 1,
+    "tempmax_attribute": 50,
+    "tempavg_attribute": 43.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 2,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 41.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 3,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 4,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 5,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 6,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 7,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 8,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 9,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 10,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 11,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 35.5,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 12,
+    "tempmax_attribute": 50,
+    "tempavg_attribute": 44.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 13,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 14,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 15,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 16,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 17,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 18,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 19,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 20,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 41.5,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 21,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 22,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 35.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 23,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 41,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 24,
+    "tempmax_attribute": 48,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 25,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 26,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 27,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 28,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 29,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 44.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 30,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 31,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 32,
+    "tempmax_attribute": 42,
+    "tempavg_attribute": 39,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 33,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 34,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 35,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 36,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 35.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 37,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 36.5,
+    "tempmin_attribute": 35
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 38,
+    "tempmax_attribute": 41,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 39,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 40,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 41,
+    "tempmax_attribute": 38,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 42,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 42,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 43,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 44,
+    "tempmax_attribute": 40,
+    "tempavg_attribute": 40,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 45,
+    "tempmax_attribute": 35,
+    "tempavg_attribute": 35.5,
+    "tempmin_attribute": 36
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 46,
+    "tempmax_attribute": 42,
+    "tempavg_attribute": 40,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 47,
+    "tempmax_attribute": 45,
+    "tempavg_attribute": 42.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 48,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 36.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 49,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 50,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 44,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 51,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 41,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 52,
+    "tempmax_attribute": 43,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 38
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 53,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 38,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 54,
+    "tempmax_attribute": 37,
+    "tempavg_attribute": 38.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 55,
+    "tempmax_attribute": 47,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 56,
+    "tempmax_attribute": 39,
+    "tempavg_attribute": 39.5,
+    "tempmin_attribute": 40
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 57,
+    "tempmax_attribute": 44,
+    "tempavg_attribute": 40.5,
+    "tempmin_attribute": 37
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 58,
+    "tempmax_attribute": 36,
+    "tempavg_attribute": 37.5,
+    "tempmin_attribute": 39
+  },
+  {
+    "Year": 2025,
+    "Month": 5,
+    "Day": 1,
+    "Hour": 1,
+    "Minute": 59,
+    "tempmax_attribute": 49,
+    "tempavg_attribute": 43,
+    "tempmin_attribute": 37
+  }
+]
