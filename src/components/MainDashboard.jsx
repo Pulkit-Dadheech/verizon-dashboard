@@ -7,7 +7,7 @@ import ThermalSensorDashboard from "./dashboard/ThermalSensor/ThermalSensorDashb
 import GaugeMonitorDashboard from "./dashboard/GaugeMonitor/GaugeMonitorDashboard";
 import SummaryDashboard from "./dashboard/SummaryDashboard/SummaryDashboard";
 
-export const MainDashboard = () => {
+const MainDashboard = () => {
   const { activeSection, setActiveSection } = useSidebar("verizon");
   const sidebarSections = ["verizon","thermal","gauge","summary"];
   const sidebarIcons = [null, null]; // Use null for no icons
@@ -39,3 +39,5 @@ export const MainDashboard = () => {
     </>
   );
 };
+
+export default MainDashboard;

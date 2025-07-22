@@ -1,23 +1,51 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NotFound from './NotFound';
-import { MainDashboard } from './components/MainDashboard';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { SidebarProvider } from './context/SidebarContext';
 
-function App() {
+const MainDashboard = lazy(() => import('./components/MainDashboard'));
+const NotFound = lazy(() => import('./NotFound'));
 
+const routeComponentMap = {
+  '/': MainDashboard,
+  '/dashboard': MainDashboard,
+};
+
+const DynamicComponent = ({ entryUrl }) => {
+  const MatchedComponent = routeComponentMap[entryUrl?.toLowerCase()] || MainDashboard;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MatchedComponent />
+    </Suspense>
+  );
+};
+
+const AppInnerContent = ({ entryUrl }) => {
+  const location = useLocation();
+  return (
+    <>
+      {entryUrl && location.pathname === '/' ? (
+        <Routes>
+          <Route path="*" element={<DynamicComponent entryUrl={entryUrl} />} />
+        </Routes>
+      ) : (
+        <Routes>
+          <Route path="/" element={<MainDashboard />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      )}
+    </>
+  );
+};
+
+function App(props) {
   return (
     <SidebarProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainDashboard/>} />
-          {/* <Route path="/about" element={<About />} /> */}
-          <Route path="*" element={<NotFound />} /> {/* Show NotFound for unknown routes */}
-        </Routes>
+      <BrowserRouter basename={props?.basename || '/'}>
+        <AppInnerContent entryUrl={props?.entryUrl} />
       </BrowserRouter>
     </SidebarProvider>
-  )
+  );
 }
 
-export default App
+export default App;
