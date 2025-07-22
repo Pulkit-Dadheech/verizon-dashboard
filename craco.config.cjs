@@ -10,8 +10,8 @@ module.exports = {
       webpackConfig.output.libraryTarget = "umd";
       webpackConfig.output.globalObject = "window";
  
-      // Modify publicPath for standalone usage
-      webpackConfig.output.publicPath = '/'; // Set the base path for static assets
+      // Modify publicPath for Vercel deployment
+      webpackConfig.output.publicPath = process.env.NODE_ENV === 'production' ? './' : '/';
  
       // SVG loader configuration
       const svgLoader = {

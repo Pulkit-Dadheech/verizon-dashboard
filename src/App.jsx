@@ -22,6 +22,8 @@ const DynamicComponent = ({ entryUrl }) => {
 
 const AppInnerContent = ({ entryUrl }) => {
   const location = useLocation();
+  console.log('AppInnerContent rendering with location:', location.pathname, 'entryUrl:', entryUrl);
+  
   return (
     <>
       {entryUrl && location.pathname === '/' ? (
@@ -39,9 +41,15 @@ const AppInnerContent = ({ entryUrl }) => {
 };
 
 function App(props) {
+  console.log('App component rendering with props:', props);
+  
+  // For standalone deployment, use default basename
+  const basename = props?.basename || (window.__POWERED_BY_QIANKUN__ ? '/' : '/');
+  console.log('Using basename:', basename);
+  
   return (
     <SidebarProvider>
-      <BrowserRouter basename={props?.basename || '/'}>
+      <BrowserRouter basename={basename}>
         <AppInnerContent entryUrl={props?.entryUrl} />
       </BrowserRouter>
     </SidebarProvider>
